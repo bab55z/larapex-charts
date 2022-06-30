@@ -81,6 +81,17 @@ $chart = (new LarapexChart)->setType('area')
         ->setXAxis([
             'Jan', 'Feb', 'Mar'
         ])
+        ->setXaxisOptions([
+            'type'                    => 'category', 
+            'position'                => 'bottom',
+            'labels.show'             => true,
+            'labels.style.colors'     => '#ffff06',
+            'labels.style.fontSize'   => '12px',
+            'labels.style.fontFamily' => 'Arial',
+            'labels.style.fontWeight' => 500,
+            'axisBorder.show'         => true,
+            'tooltip.enabled'         => true,
+        ])
         ->setDataset([
             [
                 'name'  =>  'Active Users',
