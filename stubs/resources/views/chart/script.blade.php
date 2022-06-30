@@ -26,9 +26,7 @@
             text: '{!! $chart->subtitle() !!}',
             align: '{!! $chart->subtitlePosition() !!}'
         },
-        xaxis: {
-            categories: {!! $chart->xAxis() !!}
-        },
+        xaxis: {!! $chart->xAxisOptions() !!},
         grid: {!! $chart->grid() !!},
         markers: {!! $chart->markers() !!},
         @if($chart->stroke())

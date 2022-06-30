@@ -4,7 +4,7 @@
 namespace ArielMejiaDev\LarapexCharts\Traits;
 
 use ArielMejiaDev\LarapexCharts\LarapexChart;
-use ArielMejiaDev\LarapexCharts\Traits\OptionsHelper
+use ArielMejiaDev\LarapexCharts\Traits\OptionsHelper;
 
 /**
 * This class provides extended xAxis options support

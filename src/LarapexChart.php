@@ -1,7 +1,7 @@
 <?php namespace ArielMejiaDev\LarapexCharts;
 
 use Illuminate\Support\Facades\View;
-use ArielMejiaDev\LarapexCharts\Traits\XAxisOptions
+use ArielMejiaDev\LarapexCharts\Traits\XAxisOptions;
 	
 class LarapexChart
 {
@@ -487,9 +487,7 @@ class LarapexChart
                 'text' => $this->subtitle() ? $this->subtitle() : '',
                 'align' => $this->subtitlePosition() ? $this->subtitlePosition() : '',
             ],
-            'xaxis' => [
-                'categories' => json_decode($this->xAxis()),
-            ],
+            'xaxis' => $this->xAxisOptions(true),
             'grid' => json_decode($this->grid()),
             'markers' => json_decode($this->markers()),
         ];
@@ -530,9 +528,7 @@ class LarapexChart
                 'text' => $this->subtitle() ? $this->subtitle() : '',
                 'align' => $this->subtitlePosition() ? $this->subtitlePosition() : '',
             ],
-            'xaxis' => [
-                'categories' => json_decode($this->xAxis()),
-            ],
+            'xaxis' => $this->xAxisOptions(true),
             'grid' => json_decode($this->grid()),
             'markers' => json_decode($this->markers()),
         ];
