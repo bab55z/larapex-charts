@@ -81,8 +81,8 @@ $chart = (new LarapexChart)->setType('area')
         ->setXAxis([
             'Jan', 'Feb', 'Mar'
         ])
+        ->setXAxisOption('type', 'datetime')
         ->setXaxisOptions([
-            'type'                    => 'category', 
             'position'                => 'bottom',
             'labels.show'             => true,
             'labels.style.colors'     => '#ffff06',
