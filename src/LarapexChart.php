@@ -1,7 +1,8 @@
 <?php namespace ArielMejiaDev\LarapexCharts;
 
 use Illuminate\Support\Facades\View;
-
+use ArielMejiaDev\LarapexCharts\Traits\XAxisOptions
+	
 class LarapexChart
 {
     /*
@@ -37,6 +38,8 @@ class LarapexChart
     protected $dataLabels;
     private $chartLetters = 'abcdefghijklmnopqrstuvwxyz';
 
+    use XAxisOptions;
+	
     /*
     |--------------------------------------------------------------------------
     | Constructors
